@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/login.css" />
+    <link rel="stylesheet" href="styles/theme.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo"></div>
+    </nav>
+    <section class="login">
+      <div class="login-image">
+        <div class="logo"></div>
+        <div class="image-text">
+          <div class="text-preset-1">
+            Keep track of your money and save for your future
+          </div>
+          <div class="text-preset-4">
+            Personal finance app puts you in control of your spending. Track
+            transactions, set budgets, and add to savings pots easily.
+          </div>
+        </div>
+      </div>
+      <div class="login-section">
+        <div class="login-card">
+          <h1 class="text-preset-1">Sign Up</h1>
+          <div class="inputs">
+            <label class="text-preset-5-bold" for="name">Name</label>
+            <input type="text" id="name" />
+            <label class="text-preset-5-bold" for="email">Email</label>
+            <input type="text" id="email" />
+            <label class="text-preset-5-bold" for="password text-preset-5-bold"
+              >Password</label
+            >
+            <div class="password-input">
+              <input type="password" id="password" />
+              <svg
+                id="reveal-password"
+                height="10"
+                viewBox="0 0 16 10"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m15.4569 4.7975c-.0219-.04937-.5513-1.22375-1.7282-2.40063-1.5681-1.56812-3.5487-2.39687-5.72871-2.39687-2.18 0-4.16062.82875-5.72875 2.39687-1.17687 1.17688-1.708746 2.35313-1.728121 2.40063-.028429.06394-.043119.13314-.043119.20312s.01469.13918.043119.20313c.021875.04937.551251 1.22313 1.728121 2.4 1.56813 1.5675 3.54875 2.39625 5.72875 2.39625 2.18001 0 4.16061-.82875 5.72871-2.39625 1.1769-1.17687 1.7063-2.35063 1.7282-2.4.0284-.06395.0431-.13315.0431-.20313s-.0147-.13918-.0431-.20312zm-7.45691 2.7025c-.49445 0-.9778-.14662-1.38892-.42133-.41112-.2747-.73156-.66515-.92077-1.12196-.18922-.45682-.23873-.95948-.14227-1.44444.09646-.48495.33457-.93041.6842-1.28004s.79509-.58773 1.28004-.68419c.48495-.09647.98762-.04696 1.44443.14226.45682.18922.84726.50965 1.122.92077.2747.41113.4213.89448.4213 1.38893 0 .66304-.2634 1.29893-.73224 1.76777s-1.10472.73223-1.76777.73223z"
+                />
+              </svg>
+            </div>
+            <p class="password-hint text-preset-5">
+              Passwords must be at least 8 characters
+            </p>
+            <button class="btn login text-preset-4-bold">Create Account</button>
+            <div class="register-switch">
+              <p class="text-preset-4">
+                Need to create an account?
+                <a href="login.html" class="sign-up text-preset-4-bold"
+                  >Login</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      const reveal_password = document.getElementById("reveal-password");
+      const password = document.getElementById("password");
+      reveal_password.addEventListener("click", () => {
+        console.log(1);
+        password.type = password.type === "password" ? "text" : "password";
+      });
+    </script>
+  </body>
+</html>
