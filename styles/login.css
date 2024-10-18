@@ -20,7 +20,7 @@ section.login {
 }
 
 .login-image {
-  background-image: url("assets/images/illustration-authentication.svg");
+  background-image: url("../assets/images/illustration-authentication.svg");
   max-width: 560px;
   flex-grow: 1;
   background-size: cover;
@@ -39,7 +39,7 @@ section.login {
 .logo {
   height: 22px;
   width: 122px;
-  background-image: url("assets/images/logo-large.svg");
+  background-image: url("../assets/images/logo-large.svg");
 }
 
 .image-text {
